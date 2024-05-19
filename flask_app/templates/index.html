@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweet Predictions</title>
+</head>
+<body>
+    <h1>Tweet Predictions</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Tweet</th>
+                <th>Predicted Class</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for entry in data %}
+            <tr>
+                <td>{{ entry.tweet }}</td>
+                <td>{{ entry.predicted_class }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
